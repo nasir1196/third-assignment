@@ -38,20 +38,19 @@ console.log(totalBudget);
 //Function for Hotel Cost
 function hotelCost(day) {
   var rent = 0;
-  if(day<=10){
-    rent=day*100;
-  }else if(day<=20){
-    var firstShift=10*100;
-    var remainingDay=day-10;
-    var secondShift=remainingDay*80;
-    rent=firstShift+secondShift;
-  }
-  else{
-    var firstShift=10*100;
-    var secondShift=10*80;
-    var remainingDay=day-20;
-    var thirdShift=remainingDay*50;
-    rent = firstShift+secondShift+thirdShift;
+  if (day <= 10) {
+    rent = day * 100;
+  } else if (day <= 20) {
+    var firstShift = 10 * 100;
+    var remainingDay = day - 10;
+    var secondShift = remainingDay * 80;
+    rent = firstShift + secondShift;
+  } else {
+    var firstShift = 10 * 100;
+    var secondShift = 10 * 80;
+    var remainingDay = day - 20;
+    var thirdShift = remainingDay * 50;
+    rent = firstShift + secondShift + thirdShift;
   }
   return rent;
 }
@@ -59,4 +58,15 @@ var totalRent = hotelCost(21);
 console.log(totalRent);
 
 //Function for Mega Friend
-function
+function megaFriend(list) {
+  var mega = list[0];
+  for (var i = 0; i < list.length; i++) {
+    var megaList = list[i];
+    if (megaList > mega) {
+      mega = megaList;
+    }
+  }
+  return mega;
+}
+var friendList=['Nasir','Jubaer','Merajul','Rubel','Abdur Rahman'];
+console.log(friendList);
