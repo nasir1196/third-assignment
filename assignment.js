@@ -1,3 +1,5 @@
+// https://github.com/nafim96/third-assignment
+
 // kilometer to Meter Function
 function kilometerToMeter(kiloMeter) {
   if (kiloMeter <= -1) {
@@ -55,3 +57,6 @@ function hotelCost(day) {
 }
 var totalRent = hotelCost(21);
 console.log(totalRent);
+
+//Function for Mega Friend
+function
