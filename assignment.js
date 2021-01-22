@@ -72,6 +72,6 @@ function megaFriend(list) {
   }
   return superMega;
 }
-var friendList = ['Mazharul','Merajul','Jubaer','Rubel','Habib'];
-var bigFriend=megaFriend(friendList);
+var friendList = ["Mazharul", "Merajul", "Jubaer", "Rubel", "Habib"];
+var bigFriend = megaFriend(friendList);
 console.log(bigFriend);
