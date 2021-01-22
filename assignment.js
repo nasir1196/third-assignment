@@ -34,7 +34,7 @@ function budgetCalculator(watch, phone, laptop) {
     return totalValue;
   }
 }
-var totalBudget = budgetCalculator(5, 5, 5);
+var totalBudget = budgetCalculator(6, 10, 7);
 console.log(totalBudget);
 
 //Function for Hotel Cost
