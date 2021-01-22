@@ -1,6 +1,7 @@
 // https://github.com/nafim96/third-assignment
 
 // kilometer to Meter Function
+
 function kilometerToMeter(kiloMeter) {
   if (kiloMeter <= -1) {
     return "Distance can't be negative";
@@ -10,10 +11,11 @@ function kilometerToMeter(kiloMeter) {
     return meter;
   }
 }
-var output = kilometerToMeter(5);
-console.log(output);
+var totalMeter = kilometerToMeter(5);
+console.log(totalMeter);
 
 // function for Budget Calculator
+
 function budgetCalculator(watch, phone, laptop) {
   if (watch <= -1) {
     return "Input Invalid Digit";
@@ -36,6 +38,7 @@ var totalBudget = budgetCalculator(5, 5, 5);
 console.log(totalBudget);
 
 //Function for Hotel Cost
+
 function hotelCost(day) {
   var rent = 0;
   if (day <= 10) {
@@ -58,15 +61,17 @@ var totalRent = hotelCost(21);
 console.log(totalRent);
 
 //Function for Mega Friend
+
 function megaFriend(list) {
-  var mega = list[0];
+  var superMega = "";
   for (var i = 0; i < list.length; i++) {
     var megaList = list[i];
-    if (megaList > mega) {
-      mega = megaList;
+    if (megaList.length > superMega.length) {
+      superMega = megaList;
     }
   }
-  return mega;
+  return superMega;
 }
-var friendList=['Nasir','Jubaer','Merajul','Rubel','Abdur Rahman'];
-console.log(friendList);
+var friendList = ['Mazharul','Merajul','Jubaer','Rubel','Habib'];
+var bigFriend=megaFriend(friendList);
+console.log(bigFriend);
