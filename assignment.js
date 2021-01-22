@@ -2,16 +2,16 @@
 
 // kilometer to Meter Function
 
-function kilometerToMeter(kiloMeter) {
-  if (kiloMeter <= -1) {
+function kilometerToMeter(kilometer) {
+  if (kilometer <= -1) {
     return "Distance can't be negative";
   } else {
     var kilo = 1000;
-    var meter = kilo * kiloMeter;
+    var meter = kilo * kilometer;
     return meter;
   }
 }
-var totalMeter = kilometerToMeter(5);
+var totalMeter = kilometerToMeter(10);
 console.log(totalMeter);
 
 // function for Budget Calculator
